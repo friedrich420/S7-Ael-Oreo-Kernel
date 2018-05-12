@@ -32,13 +32,10 @@
 #include <linux/smc.h>
 #include <linux/debugfs.h>
 #include <linux/of_gpio.h>
-<<<<<<< HEAD
 #include <linux/sched.h>
-=======
 #ifdef CONFIG_STATE_NOTIFIER
 #include <linux/state_notifier.h>
 #endif
->>>>>>> d752d5dd4... Add state notifier driver
 
 #include <media/exynos_mc.h>
 #include <video/mipi_display.h>
