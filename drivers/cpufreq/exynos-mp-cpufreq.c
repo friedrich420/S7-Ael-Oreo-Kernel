@@ -57,6 +57,15 @@
 #define POWER_COEFF_7P		10 /* percore  param */
 
 #ifdef CONFIG_SOC_EXYNOS8890
+#define CL0_MIN_FREQ		442000
+#define CL0_MAX_FREQ		1586000
+#define CL1_MIN_FREQ		728000
+#define CL1_MAX_FREQ		2288000
+#else
+#error "Please define core frequency ranges for current SoC."
+#endif
+
+#ifdef CONFIG_SOC_EXYNOS8890
 #define CL0_MAX_VOLT		1175000
 #define CL1_MAX_VOLT		1125000
 #define CL0_MIN_VOLT		500000
